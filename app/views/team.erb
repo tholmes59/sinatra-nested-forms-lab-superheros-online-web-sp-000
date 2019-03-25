@@ -6,12 +6,13 @@
   <h4>Height: <%= @pirate.height %> inches</h4>
 </div><br>
 
-<h1>Ships</h1>
+<h1><%= @team.name %></h1><br>
+<h2>Team Motto:<%= @team.motto %>!</h2><br>
 <% @heros.each do |hero| %>
   <div class="ship">
-    <p>Hero Name: <%= ship.name %></p><br>
-    <p>Type: <%= ship.type %></p><br>
-    <p>Booty: <%= ship.booty %></p>
+    <h2>Hero Name: <%= hero.name %></h2><br>
+    <p>Hero Power: <%= hero.type %></p><br>
+    <p>Hero Biography: <%= hero.booty %></p>
   </div><br>
 <% end %>
 
