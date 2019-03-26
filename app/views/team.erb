@@ -1,6 +1,6 @@
 <h1>Pirates</h1>
 
-<div class="pirate">
+<div class="team">
   <h3>Name: <%= @pirate.name %></h3><br>
   <h4>Weight: <%= @pirate.weight %> pounds</h4><br>
   <h4>Height: <%= @pirate.height %> inches</h4>
@@ -9,7 +9,7 @@
 <h1><%= @team.name %></h1><br>
 <h2>Team Motto:<%= @team.motto %>!</h2><br>
 <% @heros.each do |hero| %>
-  <div class="ship">
+  <div class="hero">
     <h2>Hero Name: <%= hero.name %></h2><br>
     <p>Hero Power: <%= hero.power %></p><br>
     <p>Hero Biography: <%= hero.bio %></p>
